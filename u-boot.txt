@@ -1,0 +1,7 @@
+load mmc 0:1 ${loadaddr} soc_system.rbf;
+fpga load 0 ${loadaddr} $filesize;
+env set axibridge "ffd0501c"
+env set axibridge_handoff '0x00000000'
+env set l3remap 'ff800000'
+env set l3remap_handoff '0x00000019'
+mw $axibridge ${axibridge_handoff}; mw $l3remap ${l3remap_handoff};
