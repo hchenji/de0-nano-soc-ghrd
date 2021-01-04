@@ -1,0 +1,9 @@
+u-boot-socfpga
+linux-socfpga
+
+
+sd_card/rootfs/
+
+sd_card/sdfs/
+
+sd_card/debian-10.5-minimal-armhf-2020-08-24/
